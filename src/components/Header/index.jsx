@@ -1,8 +1,11 @@
-function Header () {
+function Header() {
     return (
-        <header>
-            <h1>Thomas Hingray, <span>développeur</span> web et mobile</h1>
-        </header>
+        <nav>
+            <a href='*'>Mes compétences</a>
+            <a href='*'>Mes travaux</a>
+            <a href='*'>A propos</a>
+            <a href='*'>Contact</a>
+        </nav>
     )
 }
 

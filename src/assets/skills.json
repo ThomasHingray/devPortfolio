@@ -1,0 +1,60 @@
+[
+    {
+        "category" : "Frontend",
+        "skills" : [
+            {
+                "name" : "HTML"
+            },
+            {
+                "name" : "CSS"
+            },
+            {
+                "name" : "Sass"
+            },
+            {
+                "name": "Javascript/ React.js"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Backend",
+        "skills" : [
+            {
+                "name" : "NodeJS"
+            },
+            {
+                "name" : "Express.js"
+            },
+            {
+                "name" : "MongoDB"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Organisation",
+        "skills" : [
+            {
+                "name" : "Débuggage"
+            },
+            {
+                "name" : "Optimisation"
+            },
+            {
+                "name" : "SEO"
+            },
+            {
+                "name": "Planification"
+            },
+            {
+                "name": "Versionnage"
+            },
+            {
+                "name": "Méthodologie AGILE"
+            }
+        ]
+       
+    }
+    
+]

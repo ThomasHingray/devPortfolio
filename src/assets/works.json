@@ -1,0 +1,85 @@
+[
+    {
+        "name":"testDino",
+        "skills": [
+            "Javascript",
+            "HTML",
+            "CSS",
+            "libraries"
+        ],
+        "description":"Test Dino est un test de personnalité que j'ai entièrement créé pour appliquer mes cours de Javascript.",
+        "challenge":"Comptabiliser les réponses de l'utilisateur, générer différents types de questions, utiliser une bibliothèque",
+        "link":"https://thomashingray.github.io/testDino/",
+        "picture":"testDino"
+    },
+    {
+        "name":"Booki",
+        "skills": [
+            "HTML",
+            "CSS"
+        ],
+        "description":"Intégration de la maquette Figma de Booki, site de réservation de logements en ligne.",
+        "challenge":"Intégrer une page à partir d'une maquette, implémenter une interface responsive",
+        "link":"https://thomashingray.github.io/p2_booki/",
+        "picture":"booki"
+    },
+    {
+        "name":"Sophie Bluel - Architecte",
+        "skills": [
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "description":"Créer les interactions utilisateur pour le site professionnel de Sophie Bluel: connexion, consultation et modification de projets, configuration de modales",
+        "challenge":"Communiquer avec un backend avec les termes CRUD, configurer une modale, gérer les mises à jour d'affichage, gérer un formulaire",
+        "link":"https://github.com/ThomasHingray/p3_archi",
+        "picture":"sophieBluel"
+    },
+    {
+        "name":"Nina Carducci - Photographe",
+        "skills": [
+            "SEO",
+            "Accessibilité",
+            "Optimisation"
+        ],
+        "description":"Réaliser un audit de performance, accessibilité et SEO pour le site d'une photographe puis optimiser celui-ci.",
+        "challenge":"Rédiger un rapport d'audit, optimiser les performances, l'accessibilité, le SEO",
+        "link":"https://thomashingray.github.io/Nina_Carducci/",
+        "picture":"ninaCarducci"
+    },
+    {
+        "name":"Kasa",
+        "skills": [
+            "Javascript",
+            "React.JS",
+            "SASS"
+        ],
+        "description":"Intégrer le site de Kasa, location d'hébergements en ligne, à partir d'une maquette avec React",
+        "challenge":"Configurer la navigation avec React Router, structurer le code selon une logique de composants avec React et SASS, manipuler les hooks React",
+        "link":"https://github.com/ThomasHingray/kasa",
+        "picture":"kasa"
+    },
+    {
+        "name":"Mon Vieux Grimoire",
+        "skills": [
+            "NodeJS",
+            "Express.js",
+            "MongoDB"
+        ],
+        "description":"Créer le backend du site Mon Vieux Grimoire, à partir de spécifications fonctionnelles et techniques et d'un frontend déjà intégré",
+        "challenge":"Implémenter un modèle de données, mettre en oeuvre des opérations CRUD de manière sécurisée, enregistrer des données NoSQL",
+        "link":"https://github.com/ThomasHingray/monVieuxGrimoire",
+        "picture":"monVieuxGrimoire"
+    },
+    {
+        "name":"Portfolio",
+        "skills": [
+            "HTML",
+            "CSS"
+        ],
+        "description":"Portfolio artistique créé pour m'entraîner aux manipulations de CSS et HTML",
+        "challenge":"Imaginer un design cohérent, rendre un site interactif avec CSS, implémenter un carroussel",
+        "link":"https://thomashingray.github.io/portfolio/",
+        "picture":"portfolio"
+    }
+]

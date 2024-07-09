@@ -1,8 +1,8 @@
 function Footer () {
     return (
-        <header>
-            Bye
-        </header>
+        <footer>
+            <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+        </footer>
     )
 }
 
