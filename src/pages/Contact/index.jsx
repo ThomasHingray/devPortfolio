@@ -1,7 +1,9 @@
+import Form from "../../components/Form"
+
 function Contact() {
     return (
         <section>
-            <p>Contactez-moi !</p>
+            <Form/>
         </section>
     )
 }
