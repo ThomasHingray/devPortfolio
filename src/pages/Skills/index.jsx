@@ -3,10 +3,11 @@ import skillCards from '../../assets/skills.json'
 function Skills() {
     
     return (
-        <section className = "skillContainer">
+        <section id = "skillContainer">
+            <h2>Compétences</h2>
             {skillCards.map((skillCard, index) => (
                 <div className= {`skillCard card${index + 1}`} key={skillCard.category}>
-                    <h2>{skillCard.category}</h2>
+                    <h3>{skillCard.category}</h3>
                     <ul>
                         {skillCard.skills.map(skill => (
                             <li key={skill.name}>{skill.name}</li>
