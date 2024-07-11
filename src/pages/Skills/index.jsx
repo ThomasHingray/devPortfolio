@@ -4,8 +4,8 @@ function Skills() {
     
     return (
         <section className = "skillContainer">
-            {skillCards.map((skillCard) => (
-                <div className= "skillCard" key={skillCard.category}>
+            {skillCards.map((skillCard, index) => (
+                <div className= {`skillCard card${index + 1}`} key={skillCard.category}>
                     <h2>{skillCard.category}</h2>
                     <ul>
                         {skillCard.skills.map(skill => (
