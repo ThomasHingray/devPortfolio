@@ -1,10 +1,10 @@
-import testDino from "../../assets/testDino.png"
-import booki from "../../assets/booki.png"
-import kasa from "../../assets/kasa.png"
-import monVieuxGrimoire from "../../assets/monVieuxGrimoire.png"
-import ninaCarducci from "../../assets/ninaCarducci.png"
-import portfolio from "../../assets/portfolio.png"
-import sophieBluel from "../../assets/sophieBluel.png"
+import testDino from "../../assets/worksImages/testDino.png"
+import booki from "../../assets/worksImages/booki.png"
+import kasa from "../../assets/worksImages/kasa.png"
+import monVieuxGrimoire from "../../assets/worksImages/monVieuxGrimoire.png"
+import ninaCarducci from "../../assets/worksImages/ninaCarducci.png"
+import portfolio from "../../assets/worksImages/portfolio.png"
+import sophieBluel from "../../assets/worksImages/sophieBluel.png"
 import works from "../../assets/works.json"
 
 function Portfolio() {
