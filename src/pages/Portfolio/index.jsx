@@ -1,33 +1,35 @@
-import testDino from "../../assets/worksImages/testDino.png"
-import booki from "../../assets/worksImages/booki.png"
-import kasa from "../../assets/worksImages/kasa.png"
-import monVieuxGrimoire from "../../assets/worksImages/monVieuxGrimoire.png"
-import ninaCarducci from "../../assets/worksImages/ninaCarducci.png"
-import portfolio from "../../assets/worksImages/portfolio.png"
-import sophieBluel from "../../assets/worksImages/sophieBluel.png"
 import works from "../../assets/works.json"
+import TopWorkCard from "../../components/TopWorkCard"
+import WorkCard from "../../components/WorkCard"
 
 function Portfolio() {
 
-    let pictures = {
-        "testDino": testDino,
-        "booki": booki,
-        "kasa" : kasa,
-        "monVieuxGrimoire" : monVieuxGrimoire,
-        "ninaCarducci" : ninaCarducci,
-        "portfolio" : portfolio,
-        "sophieBluel" : sophieBluel
-    }
+    const topWorks = works.filter(work => work.name === "testDino" || work.name === "Kasa");
+    const updatedWorks = works.filter(work => work.name !== "testDino" && work.name !== "Kasa");
+
 
     return (
-        <section className="portfolio">
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="topWorkContainer">
+                {topWorks.map((work) =>(
+                    <TopWorkCard
+                        name={work.name}
+                        skills={work.skills}
+                        description={work.description}
+                        challenge={work.challenge}
+                        link={work.link}
+                        picture={work.picture}
+                        key={work.name}
+                    />
+                ))}
+            </div>
             <div id="workCardContainer">
-                {works.map((work) => (
-                    <div className="workCard" key={work.name}>
-                        <img src={pictures[work.picture]} alt ={work.name}/>
-                        <h2>{work.name}</h2>
-                    </div>
-                    
+                {updatedWorks.map((work) => (
+                    <WorkCard 
+                        name={work.name} 
+                        picture={work.picture} 
+                        key={work.name}/>
                 ))}
             </div>
             

@@ -33,8 +33,8 @@ function Landing () {
                 <img className="landingContent" src={forrest} alt="" style={{marginTop: `${yValue*1}px`, transform: `translateX(${yValue*1}px)`}}/>
                 <img className="landingContent" src={barren} alt="" style={{marginTop: `${yValue*0.5}px`, transform: `translateX(${yValue*-1}px)`}}/>
                 <img className="landingContent" src={tree} alt="" style={{transform: `translateX(${yValue*1.5}px)`}}/>
-                <h1 className="landingContent" style={{marginTop: `${yValue*2}px`}}>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>web et mobile</h1>
                 <img className="landingContent" src={cliff} alt="" style={{transform: `translateX(${yValue*-1.5}px)`}}/>
+                <h1 className="landingContent" style={{marginTop: `${yValue*2}px`}}>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>web et mobile</h1>
                 <img className="landingContent" src={foret} alt="" />
                 </>
             )}

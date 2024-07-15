@@ -43,7 +43,7 @@ nav a {
 
 #greenBackground {
   position: relative;
-  height: 50vh;
+  height: 30vh;
   background-color: #204012;
 }
 
@@ -177,6 +177,113 @@ nav a {
   transition: ease-in-out 0.5s;
 }
 
+#portfolio {
+  margin-top: 30vh;
+}
+#portfolio > h2 {
+  padding: 15px;
+  color: black;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 15px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px #B9D99A;
+}
+
+#topWorkContainer {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#topWorkContainer .topWorkCard {
+  margin-top: 50px;
+  display: flex;
+  width: 60%;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px #B9D99A;
+}
+#topWorkContainer .topWorkCard .topWorkImage {
+  width: 50%;
+  margin: 30px;
+}
+#topWorkContainer .topWorkCard .topWorkImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  border: solid #B9D99A 1px;
+}
+#topWorkContainer .topWorkCard .topWorkText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30px 30px 30px 0px;
+}
+#topWorkContainer .topWorkCard .topWorkText h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.5em;
+}
+#topWorkContainer .topWorkCard .topWorkText ul {
+  display: flex;
+  justify-content: center;
+}
+#topWorkContainer .topWorkCard .topWorkText li {
+  list-style: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #D9B19A;
+}
+#topWorkContainer .topWorkCard .topWorkText p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+#topWorkContainer .topWorkCard .topWorkText span {
+  font-weight: 600;
+  color: #2F591B;
+}
+#topWorkContainer .topWorkCard .topWorkText .topWorkLink {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#topWorkContainer .topWorkCard .topWorkText a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  background-color: rgba(32, 64, 18, 0.7);
+  border-radius: 20px;
+  border: solid rgba(32, 64, 18, 0.7) 1px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+#topWorkContainer .topWorkCard .topWorkText a:hover {
+  color: rgba(32, 64, 18, 0.7);
+  background-color: white;
+  letter-spacing: 5px;
+  transition: ease-in-out 0.2s;
+}
+#topWorkContainer .reverse {
+  flex-direction: row-reverse;
+}
+#topWorkContainer .reverse .topWorkText {
+  margin: 30px 0px 30px 30px;
+}
+#topWorkContainer .reverse .topWorkText .topWorkLink {
+  flex-direction: row;
+}
+#topWorkContainer .reverse .topWorkImage img {
+  border-radius: 0 20px 20px 0;
+}
+
 .workCard {
   position: relative;
   max-width: 250px;
@@ -216,6 +323,7 @@ nav a {
   display: flex;
   max-width: 100vw;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #about {
@@ -243,6 +351,29 @@ nav a {
 .fa-arrow-up {
   color: #2F591B;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #204012;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+footer img {
+  width: 30px;
+  margin: 0px 30px;
+  padding: 2px;
+  background-color: #B9D99A;
+  border-radius: 50%;
+}
+footer p {
+  margin-top: 15px;
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
 }
 
 * {
