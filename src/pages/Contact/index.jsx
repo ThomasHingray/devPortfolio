@@ -1,10 +1,14 @@
 function Contact() {
     return (
-        <section>
-           <p>Vous avez un projet ? Contactez-moi !</p>
-           <p>Par mail: thomashingray@hotmail.fr</p>
-           <p>Par téléphone: 06.50.93.10.04</p>
-           <p>Sur LinkedIn !</p>
+        <section id='contact'>
+            <div id="contactContainer">
+                <h2>Vous avez un <span>projet</span> ? <br/><br/> Contactez-moi !</h2>
+                <div>
+                    <p><span>Par mail: </span>thomashingray@hotmail.fr</p>
+                    <p><span>Par téléphone: </span>06.50.93.10.04</p>
+                    <p><span>Sur LinkedIn !</span></p>
+                </div>
+           </div>
         </section>
     )
 }

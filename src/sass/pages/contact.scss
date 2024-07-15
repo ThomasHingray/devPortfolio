@@ -1,0 +1,35 @@
+@import '../utils/colors.scss';
+
+#contact {
+    display:flex;
+    justify-content: center;
+
+    #contactContainer{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:150px;
+        width:60%;
+
+        h2 {
+            font-size:26px;
+
+            span{
+            color:$green;
+            font-size:30px;
+            }
+        }
+        
+        p{
+            margin:10px;
+            font-size:18px;
+
+            span{
+                font-weight: bold;
+                color:$green;
+            }
+        }
+
+        
+    }
+}

@@ -74,7 +74,6 @@ nav a {
 }
 
 #skillContainer {
-  max-width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -182,6 +181,7 @@ nav a {
 }
 #portfolio > h2 {
   padding: 15px;
+  margin-bottom: 80px;
   color: black;
   font-size: 3em;
   font-weight: 200;
@@ -288,7 +288,7 @@ nav a {
   position: relative;
   max-width: 250px;
   text-align: center;
-  margin: 70px 15px;
+  margin: 150px 15px;
   color: white;
   object-fit: cover;
 }
@@ -327,12 +327,34 @@ nav a {
 }
 
 #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
   max-width: 100vw;
-  background-color: #D9B19A;
+  background-color: #592F0A;
   padding: 70px 50px;
 }
-#about p {
-  margin: 15px;
+#about #aboutContainer {
+  width: 60%;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px 1px #D9B19A;
+  color: white;
+}
+#about #aboutContainer h2 {
+  padding: 15px;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 15px;
+}
+#about #aboutContainer p {
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #toTopButton {
@@ -368,12 +390,44 @@ footer img {
   padding: 2px;
   background-color: #B9D99A;
   border-radius: 50%;
+  transition: ease-in-out 0.3s;
+}
+footer img:hover {
+  scale: 1.3;
+  transition: ease-in-out 0.3s;
 }
 footer p {
   margin-top: 15px;
   color: white;
   font-weight: 100;
   font-size: 16px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
+#contact #contactContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px;
+  width: 60%;
+}
+#contact #contactContainer h2 {
+  font-size: 26px;
+}
+#contact #contactContainer h2 span {
+  color: #2F591B;
+  font-size: 30px;
+}
+#contact #contactContainer p {
+  margin: 10px;
+  font-size: 18px;
+}
+#contact #contactContainer p span {
+  font-weight: bold;
+  color: #2F591B;
 }
 
 * {
