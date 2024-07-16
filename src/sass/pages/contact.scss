@@ -8,11 +8,12 @@
         display:flex;
         justify-content: space-around;
         align-items: center;
-        padding:150px;
+        padding:150px 0;
         width:60%;
 
         h2 {
             font-size:26px;
+            margin-right:50px;
 
             span{
             color:$green;
@@ -28,6 +29,14 @@
                 font-weight: bold;
                 color:$green;
             }
+        }
+
+        a{
+            margin:10px;
+            font-size: 18px;
+            color:$green;
+            font-weight: bold;
+            text-decoration: none;
         }
 
         

@@ -6,7 +6,7 @@ function Contact() {
                 <div>
                     <p><span>Par mail: </span>thomashingray@hotmail.fr</p>
                     <p><span>Par téléphone: </span>06.50.93.10.04</p>
-                    <p><span>Sur LinkedIn !</span></p>
+                    <a href="https://linkedin.com/in/thomas-hingray" target="_blank" rel="noopener noreferrer">Sur LinkedIn !</a>
                 </div>
            </div>
         </section>

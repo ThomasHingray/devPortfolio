@@ -7,9 +7,7 @@ nav {
     text-align: right;
     background-color: $heavyGreen;
     padding: 30px;
-    z-index:1000;
-
-    // background-image: linear-gradient(129deg, #FFFFFFFF 46%, #592F0A 67%, #B9D99AFF 74%, #2F591B 100%);
+    z-index:10;
 
     a {
     margin:15px;

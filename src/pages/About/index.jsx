@@ -4,16 +4,20 @@ function About() {
             <div id= "aboutContainer">
                 <h2>A propos</h2>
                 <p>
-                    Outre mon appétance pour le développement web, je suis quelqu'un qui adore créer. Couture, chant, guitare... 
-                    Je crée également mes propres spectacles de jonglage de feu contés.
+                    Je m'appelle <span>Thomas Hingray</span>, j'ai 28 ans et je vis à <span>Rennes</span> ! Mes passions sont l'escalade, le chant et le jonglage !
                 </p>
                 <p>
-                    Originaire de Dinan et résident à Rennes, je compte bien passer ma vie en Bretagne. Toutefois, ayant très bien vécu ma formation
-                    avec OpenClassroom, je sais que je peux être efficace en télétravail.
+                    Je suis une personne très <span>créative</span>: couture, guitare, chant, danse... Tout y passe ! Je résume une partie de mes créations sur le
+                    <a href="https://thomashingray.github.io/portfolio/" target="_blank" rel="noopener noreferrer"> premier site que j'ai créé</a>, 
+                    dont les deux spectacles de contes enflammés que j'ai écrit, chorégraphié, et interprété !
                 </p>
                 <p>
-                    Mes objectifs après avoir terminé cette première formation D2WM sont de suivre la formation Concepteur Développeur d'Applications
-                    avec OpenClassroom puis d'intégrer l'ENI pour passer la formation Manager de Solutions Digitales et Data en alternance.
+                    Mes objectifs après avoir terminé cette première formation <span>D2WM</span> sont de suivre la formation <span>Concepteur Développeur d'Applications </span>
+                    avec OpenClassroom puis d'intégrer l'<span>ENI</span> pour passer la formation <span>Manager de Solutions Digitales et Data</span> en <span>alternance </span>
+                    : contactez-moi pour la <span>rentrée 2025</span> !
+                </p>
+                <p>
+                    Pour autant, je suis ouvert si vous avez des projets à me proposer et saurais en faire ma priorité!
                 </p>
             </div>
 

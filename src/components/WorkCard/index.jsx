@@ -14,10 +14,10 @@ let pictures = {
 
 function WorkCard ({name, picture}) {
     return (
-        <div className="workCard">
+        <>
             <img src={pictures[picture]} alt ={name}/>
             <h2>{name}</h2>
-        </div>
+        </>
     )
 }
 

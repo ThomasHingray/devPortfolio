@@ -17,7 +17,7 @@ function Landing () {
             setYValue(window.scrollY)
         })
 
-        if (window.scrollY > 1500) {
+        if (window.scrollY > 1000) {
             setIsVisible(false);
           } else {
             setIsVisible(true);
@@ -35,9 +35,9 @@ function Landing () {
                 <img className="landingContent" src={tree} alt="" style={{transform: `translateX(${yValue*1.5}px)`}}/>
                 <img className="landingContent" src={cliff} alt="" style={{transform: `translateX(${yValue*-1.5}px)`}}/>
                 <h1 className="landingContent" style={{marginTop: `${yValue*2}px`}}>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>web et mobile</h1>
-                <img className="landingContent" src={foret} alt="" />
                 </>
             )}
+            <img className="landingContent" src={foret} alt="" />
         </section>
     )
 }

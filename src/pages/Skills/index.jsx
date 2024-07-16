@@ -32,25 +32,41 @@ function Skills() {
 
     return (
         <>
-        <div id="greenBackground">
-        </div>
         <section id="skillsSection">
             <img src={roots} alt="background"/>
-            <h2>Compétences</h2>
+            
             <div id = "skillContainer">
-                {skillCards.map((skillCard, index) => (
-                    <div className= {`skillCard card${index + 1}`} key={index}>
-                        <h3>{skillCard.category}</h3>
-                        <ul>
-                            {skillCard.skills.map(skill => (
-                                <li key={skill.name}>
-                                    {skill.logo?<img src={icons[skill.logo]} alt={skill.name}/>:null}
-                                    {skill.name}
-                                </li>
-                            ))}
-                        </ul>
+                <h2>Compétences</h2>
+                <div id="skillCardsContainer">
+                    <div id="slider">
+                        {skillCards.map((skillCard, index) => (
+                            <div className= "skillCard" key={index}>
+                                <h3>{skillCard.category}</h3>
+                                <ul>
+                                    {skillCard.skills.map(skill => (
+                                        <li key={skill.name}>
+                                            {skill.logo?<img src={icons[skill.logo]} alt={skill.name}/>:null}
+                                            {skill.name}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                        {skillCards.map((skillCard, index) => (
+                            <div className= "skillCard" key={index}>
+                                <h3>{skillCard.category}</h3>
+                                <ul>
+                                    {skillCard.skills.map(skill => (
+                                        <li key={skill.name}>
+                                            {skill.logo?<img src={icons[skill.logo]} alt={skill.name}/>:null}
+                                            {skill.name}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
             </div>
         </section>
         </>
