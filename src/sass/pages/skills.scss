@@ -12,16 +12,18 @@
 
 #skillContainer {
     position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    top:0;
+    left:0;
+    height:100%;
     width:100%;
     display:flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding-bottom: 100px;
 
     h2 {
-        margin:auto;
+        margin-top:30px;
         padding: 15px;
 
         color:black;
@@ -41,6 +43,7 @@
 #skillCardsContainer {
     overflow: hidden;
     position: relative;
+    width:100%;
 }
 
 #skillCardsContainer:before,
@@ -93,7 +96,7 @@
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.45);
-    box-shadow: 0 0 10px 1px $lightGreen;
+    box-shadow: 0 0 5px 1px #b8c9a7;
 
     transition:ease-in-out 0.3s;
    
@@ -121,7 +124,7 @@
     transition:ease-in-out 0.3s;
 
     h3 {
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         transition: ease-in-out 0.5s;
     }
 }
@@ -130,6 +133,42 @@
     animation-play-state: paused;
 }
 
+@media screen and (max-width:1024px){
+    .double {
+        display:none;
+    }
 
+    #slider {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 80px 30px;
+    }
 
+    #skillCardsContainer{
+        align-items: center;
+        overflow:visible;
+
+        .skillCard{
+            margin:15px;
+        }
+    }
+
+    #skillCardsContainer:before, #skillCardsContainer:after{
+        display:none;
+    }
+}
+
+@media screen and (max-width:800px){
+    #skillContainer h2 {
+        font-size: 1.5em;
+        margin-top:80px;
+    }
+}
+
+@media screen and (max-width:500px){
+    #skillContainer h2 {
+        margin-top:150px;
+    }
+}
 

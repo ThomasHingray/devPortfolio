@@ -26,7 +26,7 @@
             font-size:3em;
             font-weight: 200;
             text-align: center;
-            letter-spacing: 15px;
+            letter-spacing: 10px;
 
         }
 
@@ -45,6 +45,26 @@
             color:white;
             font-size:20px;
             font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #about #aboutContainer{
+        width:85%;
+    }
+}
+
+@media screen and (max-width:800px){
+    #about {
+        padding:30px 15px;
+        
+        #aboutContainer {
+            width:100%;
+
+            p{
+                font-size:16px;
+            }
         }
     }
 }

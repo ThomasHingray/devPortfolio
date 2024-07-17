@@ -53,7 +53,7 @@ function Skills() {
                             </div>
                         ))}
                         {skillCards.map((skillCard, index) => (
-                            <div className= "skillCard" key={index}>
+                            <div className= "skillCard double" key={index}>
                                 <h3>{skillCard.category}</h3>
                                 <ul>
                                     {skillCard.skills.map(skill => (

@@ -2,7 +2,7 @@ function About() {
     return (
         <section id="about">
             <div id= "aboutContainer">
-                <h2>A propos</h2>
+                <h2>À propos</h2>
                 <p>
                     Je m'appelle <span>Thomas Hingray</span>, j'ai 28 ans et je vis à <span>Rennes</span> ! Mes passions sont l'escalade, le chant et le jonglage !
                 </p>
