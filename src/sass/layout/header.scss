@@ -10,16 +10,39 @@ nav {
     z-index:10;
 
     a {
+        position:relative;
         display:inline;
         margin:15px;
         color:white;
         text-decoration: none;
     }
 
+    a:before {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        content:"";
+        width:0%;
+        height:120%;
+        border-radius: 5px;
+        background-color: $lightGreen;
+        opacity:0.3;
+        z-index:-1;
+        transition: ease 0.3s;
+    }
+
+    a:hover:before {
+        width:115%;
+        transition: ease 0.3s;
+    }
+
     .fa-bars {
         display:none;
     }
 }
+
+
 
 @media screen and (max-width:600px){
     
@@ -39,10 +62,12 @@ nav {
             cursor: pointer;
         }
 
-        a {
+        a{
             display:none;
-        }    
+        }
     }
 
-   
+    .showNavLinks a{
+        display:inline;
+    }
 }

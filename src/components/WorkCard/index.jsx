@@ -15,7 +15,7 @@ let pictures = {
 function WorkCard ({name, picture}) {
     return (
         <>
-            <img src={pictures[picture]} alt ={name}/>
+            <img src={pictures[picture]} alt ={`Capture du projet ${name}`}/>
             <h2>{name}</h2>
         </>
     )

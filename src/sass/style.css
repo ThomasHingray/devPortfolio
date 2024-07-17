@@ -62,10 +62,29 @@ nav {
   z-index: 10;
 }
 nav a {
+  position: relative;
   display: inline;
   margin: 15px;
   color: white;
   text-decoration: none;
+}
+nav a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 0%;
+  height: 120%;
+  border-radius: 5px;
+  background-color: #B9D99A;
+  opacity: 0.3;
+  z-index: -1;
+  transition: ease 0.3s;
+}
+nav a:hover:before {
+  width: 115%;
+  transition: ease 0.3s;
 }
 nav .fa-bars {
   display: none;
@@ -89,27 +108,30 @@ nav .fa-bars {
   nav a {
     display: none;
   }
+  .showNavLinks a {
+    display: inline;
+  }
 }
 #skillsSection {
-  position: relative;
   background-color: white;
   text-align: center;
 }
-#skillsSection > img {
-  width: 100%;
-}
 
 #skillContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  position: relative;
+  background-color: white;
   width: 100%;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 100px;
+}
+#skillContainer > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 #skillContainer h2 {
   margin-top: 30px;
@@ -138,7 +160,7 @@ nav .fa-bars {
   top: 0;
   width: 15%;
   height: 100%;
-  z-index: 10;
+  z-index: 1;
   content: "";
 }
 
@@ -198,7 +220,7 @@ nav .fa-bars {
 
 .skillCard:hover {
   scale: 1.5;
-  z-index: 10;
+  z-index: 1;
   transition: ease-in-out 0.3s;
 }
 .skillCard:hover h3 {
@@ -235,6 +257,14 @@ nav .fa-bars {
   #skillContainer h2 {
     font-size: 1.5em;
     margin-top: 80px;
+  }
+  #skillContainer {
+    overflow-x: hidden;
+  }
+  #skillContainer > img {
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media screen and (max-width: 500px) {
@@ -336,6 +366,9 @@ nav .fa-bars {
 }
 
 @media screen and (max-width: 1024px) {
+  #portfolio {
+    margin-top: 0;
+  }
   #workCardContainer {
     justify-content: center;
   }
@@ -531,7 +564,6 @@ footer p {
 .topWorkCard .topWorkText p {
   margin-top: 15px;
   margin-bottom: 15px;
-  text-align: justify;
 }
 .topWorkCard .topWorkText span {
   font-weight: 600;

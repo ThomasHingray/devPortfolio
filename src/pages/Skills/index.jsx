@@ -33,9 +33,10 @@ function Skills() {
     return (
         <>
         <section id="skillsSection">
-            <img src={roots} alt="background"/>
+            
             
             <div id = "skillContainer">
+            <img src={roots} alt="background"/>
                 <h2>Compétences</h2>
                 <div id="skillCardsContainer">
                     <div id="slider">
@@ -45,7 +46,7 @@ function Skills() {
                                 <ul>
                                     {skillCard.skills.map(skill => (
                                         <li key={skill.name}>
-                                            {skill.logo?<img src={icons[skill.logo]} alt={skill.name}/>:null}
+                                            {skill.logo?<img src={icons[skill.logo]} alt={`Logo de ${skill.name}`}/>:null}
                                             {skill.name}
                                         </li>
                                     ))}
@@ -58,7 +59,7 @@ function Skills() {
                                 <ul>
                                     {skillCard.skills.map(skill => (
                                         <li key={skill.name}>
-                                            {skill.logo?<img src={icons[skill.logo]} alt={skill.name}/>:null}
+                                            {skill.logo?<img src={icons[skill.logo]} alt={`Logo de ${skill.name}`}/>:null}
                                             {skill.name}
                                         </li>
                                     ))}

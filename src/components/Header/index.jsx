@@ -5,30 +5,20 @@ function Header() {
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = () => {
-
         setMenu(!menu)
-
-        let links = document.querySelectorAll(".navLinks")
-
-        if (menu) {
-            links.forEach(link => {
-                link.style="display:inline"
-            })
-        } else {
-            links.forEach(link => {
-                link.style="display:none"
-            })
-        }
-        
     }
 
+    const closeMenu = () => {
+        setMenu(false);
+    };
+
     return (
-        <nav>
+        <nav className={`${menu ? "showNavLinks" : "hideNavLinks"}`}>
             <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
-            <a className="navLinks" href='#skillsSection'>Mes compétences</a>
-            <a className="navLinks" href='#portfolio'>Mes travaux</a>
-            <a className="navLinks" href='#about'>À propos</a>
-            <a className="navLinks" href='#contact'>Contact</a>
+            <a className="navLinks" href='#skillsSection' onClick={closeMenu}>Mes compétences</a>
+            <a className="navLinks" href='#portfolio' onClick={closeMenu}>Mes travaux</a>
+            <a className="navLinks" href='#about' onClick={closeMenu}>À propos</a>
+            <a className="navLinks" href='#contact' onClick={closeMenu}>Contact</a>
         </nav>
     )
 }

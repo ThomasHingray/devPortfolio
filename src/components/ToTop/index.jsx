@@ -5,13 +5,16 @@ import React from 'react';
 function ToTop () {
 
     let [display, setDisplay] = useState("none")
+    let [aria, setAria] = useState("true")
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY>300){
                 setDisplay("block")
+                setAria("false")
             } else {
                 setDisplay("none")
+                setAria("true")
             }
         }
 
@@ -30,13 +33,12 @@ function ToTop () {
     }
 
     return (
-        <button
-            id="toTopButton"
-            onClick={handleClick}
-            style={{display: display}}
-        >
-            <i className="fa-solid fa-arrow-up"></i>
-        </button>
+            <i className="fa-solid fa-arrow-up"  
+                aria-hidden={aria}
+                id="toTopButton"
+                onClick={handleClick}
+                style={{display: display}}>
+            </i>
     )
 }
 

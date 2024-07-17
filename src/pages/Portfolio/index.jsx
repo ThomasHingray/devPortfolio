@@ -44,11 +44,10 @@ function Portfolio() {
             </div>
             <div id="workCardContainer">
                 {updatedWorks.map((work) => (
-                    <div className="workCard" onClick={() =>toggleModal(work)}>
+                    <div className="workCard" onClick={() =>toggleModal(work)} key={work.name}>
                         <WorkCard 
                             name={work.name} 
                             picture={work.picture} 
-                            key={work.name}
                         />
                     </div>
                 ))}

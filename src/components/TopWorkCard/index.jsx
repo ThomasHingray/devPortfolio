@@ -24,9 +24,9 @@ function TopWorkCard ({name, description, picture, skills, challenge, link}) {
     }
 
     return (
-        <div className= {tag}>
+        <div className= {tag} key={`top${name}`}>
             <div className= "topWorkImage">
-                <img src={pictures[picture]} alt=""/>
+                <img src={pictures[picture]} alt={`Capture du projet ${name}`}/>
             </div>
             <div className= "topWorkText">
                 <h3>{name}</h3>
