@@ -12,6 +12,7 @@ function Landing () {
     let [yValue, setYValue] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
 
+    //----- Récupérer la valeur de Y pour déplacer les éléments de décor en fonction et les supprimer au-delà de 1000 px pour alléger la page -----
 
     useEffect (() => {
         window.addEventListener('scroll', (e) => {
@@ -39,6 +40,8 @@ function Landing () {
                     <img className="landingContent" src={foret} alt="" />
                 </div>
             )}
+
+            {/* === Si l'écran est trop petit, on supprime le parallax pour passer à un fond fixe === */}
             <div className='noParallax'>
                 <img src={background} alt="background"/>
                 <h1>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>web et mobile</h1>

@@ -5,11 +5,15 @@ import { useState } from "react";
 
 function Portfolio() {
 
+    //----- Différencier les travaux mis en avant et les autres -----
+
     const topWorks = works.filter(work => work.name === "Quel dinosaure êtes vous ?" || work.name === "Kasa");
     const updatedWorks = works.filter(work => work.name !== "Quel dinosaure êtes vous ?" && work.name !== "Kasa");
 
     const [modal, setModal] = useState(false);
     const [target, setTarget] = useState();
+
+    //----- Récupérer le travail à afficher dans la modale -----  
 
     const toggleModal = (work) => {
 
@@ -19,6 +23,8 @@ function Portfolio() {
             setModal(!modal)
             
     }
+
+    //----- Empêcher de scroller quand la modale est ouverte -----
 
     if(modal) {
         document.body.classList.add('active-modal')

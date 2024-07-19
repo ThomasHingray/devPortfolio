@@ -17,6 +17,9 @@ let pictures = {
 }
 
 function TopWorkCard ({name, description, picture, skills, challenge, link}) {
+
+    // ----- Différencier les deux travaux mis en avant -----
+    
     let tag = name === "Quel dinosaure êtes vous ?" ? "topWorkCard" : "topWorkCard reverse"
 
     if (name !== "Quel dinosaure êtes vous ?" && name !== "Kasa"){

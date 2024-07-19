@@ -7,6 +7,8 @@ function ToTop () {
     let [display, setDisplay] = useState("none")
     let [aria, setAria] = useState("true")
 
+
+    //----- Au delà de 300px, on affiche le bouton pour remonter en haut de page et on indique le ariaHidden = false -----
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY>300){
