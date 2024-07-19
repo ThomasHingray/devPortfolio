@@ -36,7 +36,7 @@ function Skills() {
             
             
             <div id = "skillContainer">
-            <img src={roots} alt="background"/>
+                <img src={roots} alt="background"/>
                 <h2>Compétences</h2>
                 <div id="skillCardsContainer">
                     <div id="slider">
@@ -53,6 +53,8 @@ function Skills() {
                                 </ul>
                             </div>
                         ))}
+                    </div>
+                    <div id="slider">
                         {skillCards.map((skillCard, index) => (
                             <div className= "skillCard double" key={index}>
                                 <h3>{skillCard.category}</h3>
@@ -68,6 +70,7 @@ function Skills() {
                         ))}
                     </div>
                 </div>
+                <p><span>Formation</span>: cursus Développeur Web et Web Mobile (<span>D2WM</span>) avec OpenClassrooms</p>
             </div>
         </section>
         </>

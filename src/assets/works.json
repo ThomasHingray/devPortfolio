@@ -7,8 +7,8 @@
             "CSS",
             "libraries"
         ],
-        "description":"Test Dino est un test de personnalité que j'ai entièrement créé pour appliquer mes cours de Javascript.",
-        "challenge":"Comptabiliser les réponses de l'utilisateur, générer différents types de questions, utiliser une bibliothèque",
+        "description":"Quel dinosaure êtes vous ? est un test de personnalité que j'ai entièrement créé pour appliquer mes cours de Javascript.",
+        "challenge":"Comptabiliser les réponses de l'utilisateur, générer différents types de questions, utiliser une bibliothèque. Pour surmonter ces contraintes, j'ai utilisé les cours d'OpenClassrooms mais j'ai également été amené à chercher d'autres ressources: tutoriels, IA, groupes discord...",
         "link":"https://thomashingray.github.io/testDino/",
         "picture":"testDino"
     },
@@ -55,7 +55,7 @@
             "SASS"
         ],
         "description":"Intégrer le site de Kasa, location d'hébergements en ligne, à partir d'une maquette avec React",
-        "challenge":"Configurer la navigation avec React Router, structurer le code selon une logique de composants avec React et SASS, manipuler les hooks React",
+        "challenge":"Pour réaliser ce projet, j'ai dû apprendre à structurer mon code avec React et Sass et mettre en place un router. J'ai notamment été confronté à des difficultés pour gérer les hooks React et le passage de props. Ma veille informationnelle, les cours de Grafikart et de nombreux essais/erreurs m'ont permis de m'approprier ces fonctionnalités.",
         "link":"https://github.com/ThomasHingray/kasa",
         "picture":"kasa"
     },

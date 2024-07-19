@@ -22,15 +22,14 @@
         width:100%;
     }
 
-    h2 {
+    h2,p {
         margin-top:30px;
         padding: 15px;
 
         color:black;
-        font-size:3em;
-        font-weight: 200;
+        
         text-align: center;
-        letter-spacing: 15px;
+        
 
         backdrop-filter: blur(15px);
         border: 1px solid rgba(255, 255, 255, .25);
@@ -38,12 +37,28 @@
         background-color: rgba(255, 255, 255, 0.45);
         box-shadow: 0 0 10px 1px $lightGreen;
     }
+
+    h2{
+        font-size:3em;
+        font-weight: 200;
+        letter-spacing: 15px;
+    }
+
+    p{
+        font-size:1.5em;
+    }
+
+    span{
+        color:$green;
+        font-weight: 700;
+    }
 }
 
 #skillCardsContainer {
     overflow: hidden;
     position: relative;
     width:100%;
+    white-space: nowrap;
 }
 
 #skillCardsContainer:before,
@@ -76,18 +91,22 @@
 }
 
 #slider {
-    display: flex;
-    white-space: nowrap;
+    display: inline-flex;
+   
     animation: 20s slide infinite linear;
+    margin:80px 0;
 }
 
+
+
 .skillCard {
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:80px 30px;
     min-width:200px;
+    min-height: 100px;
+    margin:0 15px;
     
     color:black;
     line-height: 1.5;

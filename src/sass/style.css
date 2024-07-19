@@ -133,25 +133,35 @@ nav .fa-bars {
   left: 0;
   width: 100%;
 }
-#skillContainer h2 {
+#skillContainer h2, #skillContainer p {
   margin-top: 30px;
   padding: 15px;
   color: black;
-  font-size: 3em;
-  font-weight: 200;
   text-align: center;
-  letter-spacing: 15px;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px #B9D99A;
 }
+#skillContainer h2 {
+  font-size: 3em;
+  font-weight: 200;
+  letter-spacing: 15px;
+}
+#skillContainer p {
+  font-size: 1.5em;
+}
+#skillContainer span {
+  color: #2F591B;
+  font-weight: 700;
+}
 
 #skillCardsContainer {
   overflow: hidden;
   position: relative;
   width: 100%;
+  white-space: nowrap;
 }
 
 #skillCardsContainer:before,
@@ -183,18 +193,19 @@ nav .fa-bars {
   }
 }
 #slider {
-  display: flex;
-  white-space: nowrap;
+  display: inline-flex;
   animation: 20s slide infinite linear;
+  margin: 80px 0;
 }
 
 .skillCard {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 80px 30px;
   min-width: 200px;
+  min-height: 100px;
+  margin: 0 15px;
   color: black;
   line-height: 1.5;
   backdrop-filter: blur(15px);
