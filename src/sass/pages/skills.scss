@@ -151,6 +151,19 @@
     animation-play-state: paused;
 }
 
+.link a{
+    cursor: pointer;
+    color: $green;
+    font-weight: 700;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.link a:hover {
+    letter-spacing: 5px;
+    transition: ease-in-out 0.3s;
+}
+
 @media screen and (max-width:1024px){
     .double {
         display:none;

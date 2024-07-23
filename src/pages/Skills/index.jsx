@@ -12,6 +12,7 @@ import reactJS from '../../assets/icons/react.png'
 import sass from '../../assets/icons/sass.png'
 import wave from '../../assets/icons/WAVE.jpeg'
 import roots from '../../assets/parallax/roots2.png'
+import cv from '../../assets/cv_Thomas_Hingray.pdf'
 
 let icons = {
     "css":css,
@@ -71,7 +72,7 @@ function Skills() {
                     </div>
                 </div>
                 <p><span>Formation</span>: cursus Développeur Web et Web Mobile (<span>D2WM</span>) avec OpenClassrooms</p>
-                {/* <p><a href="" download="cv_Thomas_Hingray">Télécharger mon CV</a></p> */}
+                <p className="link"><a href={cv} download="cv_Thomas_Hingray">Télécharger mon CV</a></p>
             </div>
         </section>
         </>
