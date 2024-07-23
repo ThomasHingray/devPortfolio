@@ -71,6 +71,7 @@ function Skills() {
                     </div>
                 </div>
                 <p><span>Formation</span>: cursus Développeur Web et Web Mobile (<span>D2WM</span>) avec OpenClassrooms</p>
+                {/* <p><a href="" download="cv_Thomas_Hingray">Télécharger mon CV</a></p> */}
             </div>
         </section>
         </>
