@@ -9,13 +9,12 @@ import Header from './components/Header';
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
 import ToTop from './components/ToTop';
-import SEOImage from './components/SEOImage';
-
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SEOImage/>
+    <HelmetProvider>
     <Landing/>
     <Header/>
     <ToTop/>
@@ -24,5 +23,8 @@ root.render(
     <About/>
     <Contact/>
     <Footer/>
+    </HelmetProvider>
   </React.StrictMode>
 );
+
+

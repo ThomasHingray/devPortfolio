@@ -4,7 +4,9 @@ import cliff from '../../assets/parallax/cliff2.png';
 import foret from '../../assets/parallax/foret.png';
 import tree from '../../assets/parallax/tree2.png';
 import background from '../../assets/parallax/background2.png';
+import cover from '../../assets/cover.png'
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 function Landing () {
 
@@ -30,6 +32,10 @@ function Landing () {
 
     return (
         <section id="landing">
+            <Helmet>
+                <meta property="og:image" content={"https://thomashingray.github.io" + cover} />
+                <meta name="twitter:image" content={"https://thomashingray.github.io" + cover} />
+            </ Helmet>
             {isVisible && (
                 <div className="parallax">
                     <img className="landingContent" src={forrest} alt="" style={{marginTop: `${yValue*1}px`, transform: `translateX(${yValue*1}px)`}}/>
