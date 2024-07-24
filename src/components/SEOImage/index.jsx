@@ -6,3 +6,5 @@ export const SEOImage = () =>{
         <meta name="twitter:image" content={"https://thomashingray.github.io/devPortfolio/" + {cover}} />
     </>
 }
+
+export default SEOImage
