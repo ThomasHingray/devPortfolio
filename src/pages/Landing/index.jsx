@@ -19,7 +19,7 @@ function Landing () {
             setYValue(window.scrollY)
         })
 
-        if (window.scrollY > 1000) {
+        if (window.scrollY > 900) {
             setIsVisible(false);
           } else {
             setIsVisible(true);
