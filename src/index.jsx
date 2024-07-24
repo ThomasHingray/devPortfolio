@@ -13,18 +13,20 @@ import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <HelmetProvider>
-    <Landing/>
-    <Header/>
-    <ToTop/>
-    <Skills/>
-    <Portfolio/>
-    <About/>
-    <Contact/>
-    <Footer/>
-    </HelmetProvider>
-  </React.StrictMode>
+  <HelmetProvider>
+
+    <React.StrictMode>
+        <Landing/>
+        <Header/>
+        <ToTop/>
+        <Skills/>
+        <Portfolio/>
+        <About/>
+        <Contact/>
+        <Footer/>
+      
+    </React.StrictMode>
+  </HelmetProvider>
 );
 
 
