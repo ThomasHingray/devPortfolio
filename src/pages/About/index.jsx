@@ -12,8 +12,8 @@ function About() {
                     dont les deux spectacles de contes enflammés que j'ai écrit, chorégraphié, et interprété !
                 </p>
                 <p>
-                    Mes objectifs après avoir terminé cette première formation <span>D2WM</span> sont de suivre la formation <span>Concepteur Développeur d'Applications </span>
-                    avec OpenClassroom puis d'intégrer l'<span>ENI</span> pour passer la formation <span>Manager de Solutions Digitales et Data</span> en <span>alternance </span>
+                    Mon objectif après avoir terminé une première formation <span>D2WM</span> avec OpenClassrooms et une seconde formation <span>Concepteur Développeur d'Applications </span>
+                    avec Alt - Incubateur tech est de poursuivre un mastère <span>Développeur Fullstack</span> en alternance pour finaliser mon cursus
                     : contactez-moi pour la <span>rentrée 2025</span> !
                 </p>
                 <p>

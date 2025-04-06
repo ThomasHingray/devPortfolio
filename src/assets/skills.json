@@ -19,12 +19,16 @@
             {
                 "name" : "Sass",
                 "logo": "sass"
+            },
+            {
+                "name" : "Tailwind",
+                "logo" : "tailwind"
             }
         ]
        
     },
     {
-        "category" : "Logique",
+        "category" : "Frontend",
         "skills" : [
             {
                 "name": "Javascript",
@@ -47,6 +51,10 @@
             {
                 "name" : "Express.js",
                 "logo": "expressJS"
+            },
+            {
+                "name" : "Nest.js",
+                "logo" : "nest"
             }
         ]
        
@@ -57,6 +65,10 @@
             {
                 "name" : "MongoDB",
                 "logo": "mongoDB"
+            },
+            {
+                "name" : "MySQL",
+                "logo" : "mySql"
             }
         ]
        
@@ -103,6 +115,36 @@
             }
         ]
        
+    },
+    {
+        "category" : "Déploiement",
+        "skills" : [
+            {
+                "name": "Docker",
+                "logo": "docker"
+            },
+            {
+                "name": "Nginx",
+                "logo": "nginx"
+            },
+            {
+                "name": "AWS",
+                "logo": "aws"
+            }
+        ]
+    },
+    {
+        "category": "Test",
+        "skills" : [
+            {
+                "name": "Cypress",
+                "logo": "cypress"
+            },
+            {
+                "name": "Jest",
+                "logo": "jest"
+            }
+        ]
     }
     
 ]

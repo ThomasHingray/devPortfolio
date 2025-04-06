@@ -13,6 +13,14 @@ import sass from '../../assets/icons/sass.png'
 import wave from '../../assets/icons/WAVE.jpeg'
 import roots from '../../assets/parallax/roots2.png'
 import cv from '../../assets/cv_Thomas_Hingray.pdf'
+import jest from '../../assets/icons/jest.png'
+import cypress from '../../assets/icons/cypress.png'
+import nest from '../../assets/icons/nest.jpg'
+import tailwind from '../../assets/icons/tailwind.jpg'
+import docker from '../../assets/icons/docker.jpg'
+import aws from '../../assets/icons/aws.jpg'
+import nginx from '../../assets/icons/nginx.png'
+import mySql from '../../assets/icons/mySql.jpg'
 
 let icons = {
     "css":css,
@@ -26,7 +34,15 @@ let icons = {
     "notion":notion,
     "reactJS":reactJS,
     "sass":sass,
-    "wave":wave,    
+    "wave":wave, 
+    "jest":jest,
+    "cypress":cypress,
+    "nest":nest,
+    "tailwind":tailwind,
+    "docker":docker,
+    "aws":aws,
+    "nginx":nginx,
+    "mySql":mySql   
 }
 
 function Skills() {
@@ -71,7 +87,7 @@ function Skills() {
                         ))}
                     </div>
                 </div>
-                <p><span>Formation</span>: cursus Développeur Web et Web Mobile (<span>D2WM</span>) avec OpenClassrooms</p>
+                <p><span>Formation</span>: cursus Concepteur Développeur d'Applications (<span>CDA</span>) avec Alt - Incubateur Tech</p>
                 <p className="link"><a href={cv} download="cv_Thomas_Hingray">Télécharger mon CV</a></p>
             </div>
         </section>

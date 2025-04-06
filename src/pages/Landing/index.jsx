@@ -42,7 +42,7 @@ function Landing () {
                     <img className="landingContent" src={barren} alt="" style={{marginTop: `${yValue*0.5}px`, transform: `translateX(${yValue*-1}px)`}}/>
                     <img className="landingContent" src={tree} alt="" style={{transform: `translateX(${yValue*1.5}px)`}}/>
                     <img className="landingContent" src={cliff} alt="" style={{transform: `translateX(${yValue*-1.5}px)`}}/>
-                    <h1 className="landingContent" style={{marginTop: `${yValue*2}px`}}>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>web et mobile</h1>
+                    <h1 className="landingContent" style={{marginTop: `${yValue*2}px`}}>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>Fullstack</h1>
                     <img className="landingContent" src={foret} alt="" />
                 </div>
             )}
@@ -50,7 +50,7 @@ function Landing () {
             {/* === Si l'écran est trop petit, on supprime le parallax pour passer à un fond fixe === */}
             <div className='noParallax'>
                 <img src={background} alt="background"/>
-                <h1>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>web et mobile</h1>
+                <h1>Thomas Hingray,<span>&nbsp;développeur&nbsp;</span>Fullstack</h1>
             </div>
             
         </section>
